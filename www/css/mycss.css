@@ -1,0 +1,44 @@
+
+.ui-footer {
+	display: flex;
+	margin: 0px;
+	
+	background: grey;
+	
+	}
+.ui-footer div {
+	flex:1;
+	padding: 10px;
+	
+	border: 2px solid white;
+	
+	
+	}
+
+.ui-page {
+  background: White      ;
+            //color: #666;
+            //font-family: 'Overlock SC', cursive;
+           // font-family: Calibri;
+ // background: #add9e4;
+ // background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+ // background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #fff));
+ // background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+ // background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+ // background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+ // background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+ // background-color: #f7fbfc;
+}
+.titre, .ui-header {
+           //color: #fff;
+           cursor: pointer;
+           
+           font-family: 'Overlock SC', cursive;
+           text-decoration: none;
+           text-transform: uppercase;
+           background: -webkit-gradient( linear,left top, left bottom, from(LightCyan  ), to(LightSeaGreen  ) ) ;
+           background: -webkit-linear-gradient ( top, LightCyan  , blue   ) ;
+           background: -moz-linear-gradient(top, LightCyan  , blue  );
+           background: -o-linear-gradient(top, LightCyan  , blue  );
+           }   
+ 

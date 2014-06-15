@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Presentation</title>
+    
+       
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0, 
+           maximum-scale=1.0, user-scalable=no">
+     <link href="shared/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+     <script src="shared/jquery.js" type="text/javascript"></script>
+     <script src="js/jquery.mobile-1.4.2.min.js" type="text/javascript" > </script> 
+     <script src="shared/shiny.js" type="text/javascript"></script>
+     <script src="js/script_quest.js" type="text/javascript"></script>
+     <script src="shared/datatables/js/jquery.dataTables.min.js" type="text/javascript">
+     </script>
+     <script src="shared/datatables/js/DT_bootstrap.js" type="text/javascript"></script>
+     <link href="shared/datatables/css/DT_bootstrap.css" rel="stylesheet" />
+     <script src="shared/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+     <script src="js/highcharts.js" type="text/javascript"></script>
+     <script src="js/highcharts-more.js" type="text/javascript"></script>
+     <script src="js/exporting.js" type="text/javascript"></script>
+     <link rel="stylesheet" type="text/css" href="shared/shiny.css"/> 
+     <link rel="stylesheet" href="css/mycss.css">   
+	</head>
+	<body >
+	    <!-- Header of the page--------------------------- -->
+        <div data-role="page">
+          <div  data-role="header" data-position='fixed'> 
+            <h1>Presentation</h1>
+          </div>
+				
+        <!-- content of the page -->
+        <div data-role="content"> 
+        <!-- page1 -->
+              <div id="page1">
+                   <h1 class="titre" align="center">Shiny app made 
+                      with rCharts and jQuery mobile
+  				            <small><p>Herimanitra R.</p> </small > 
+  				            <small><p>June, 2014</p></small>
+                   </h1>
+              </div>
+              <div id="page2">
+                <h1>Getting started with your customized Shiny app:</h1>
+                <p>This is a Shiny application written with 
+                   an html user interface (ui).
+                   It uses the jQuery mobile framework for its flexibility
+                   and attractiveness. jQuery mobile allows application to
+                   be responsive (rwd) similar to Bootstrap. It has some
+                   nice predefined features that allow developpers focus on
+                   their app. For example, dividing the screen into 02 parts
+                   is easily handled using some useful jQuery mobile
+                   classes.
+                </p>
+                <p>In order to do reproduce this app, 
+                   first, copy the <code>www</code>
+                   file in your shiny package:
+                   <code>[path to your R installation]/library/shiny</code>
+                   into a file (~directory) that will contain your app. 
+                </p>
+                <p><code>www</code> file contains 3 different files:</p>
+                <ul>
+                  <li>a <code>css</code> file that contains style</li>
+                  <li>a <code>js</code> file that contains JavaScript
+                    codes and libraries
+                  <li>a file called<code>shared</code> that contains
+                    a mixture of codes and libraries (.js,.css,...) for shiny to work
+                  </li>
+                  </li>
+                </ul>
+                <h2>Skeleton of your html user interface:</h2>
+                <p>Your first task is to create an html file from an
+                   empty text file by changing its extension then load 
+                   and edit it into rstudio.
+                   Skeleton of your html user interface must look like this:
+                </p>
+                </br>
+                <!-- begin ui-grid-a -->
+                <div class='ui-grid-a'>
+                       <div class='ui-block-a'>
+                           <p>First line is to say that the app is 
+                              written in HTML5 (the latest)
+                              then the <code>html</code> tag followed 
+                              by the <code>head</code>tag.
+                           </p>
+                           <p>Critical part when building this app is 
+                              the declaration of different libraries.
+                              Don't worry, you just need to copy-paste 
+                              the code then put the appropriate
+                              libraries in their respective directories (css,js). 
+                           </p>
+                             <p>You have to pay attention to these directories 
+                                when copying files.
+                                Notice that when a library is in 
+                                <code>shared</code>, that 
+                                means that It comes with the shiny 
+                                package installation then 
+                                you don't need to change it.
+                           </p>
+                           <p>First, go to 
+                           <a href='http://jquerymobile.com/download/'>
+                           jQuery mobile website</a> 
+                              then download <code>jquery.mobile-1.4.2.min.css</code> 
+                              and <code>jquery.mobile-1.4.2.min.js</code>
+                           </p>
+                           <p>You will also need to install the latest version 
+                              of <code>rCharts</code>
+                              from <a href='https://github.com/ramnathv/rCharts' >
+                              GitHub</a> then search 
+                              for <code>highcharts.js</code>,
+                              <code>highcharts-more.js</code> and 
+                              <code>exporting.js</code> inside its
+                              package installation.
+                           </p>
+                           <p>02 files are used for additionnal customization:</p>
+                              <ul>
+                                <li><code>mycss.css</code> to change 
+                                    the default appearance of jQuery mobile</li>
+                                <li><code>script_quest.js</code> to allow 
+                                     navigation via keyboards
+                                     (<code>Left</code> and <code>Right</code>,
+                                     try it yourself). 
+                                     However, this feature
+                                     alterate interactivity of rCharts and have to be 
+                                     solved in the future.
+                                </li>
+                              </ul>
+                           <p>I don't want to go in details with 
+                              JavaScript but code can be found 
+                              on my 
+                              <a href='https://github.com/RanaivosonHerimanitra'>
+                              GitHub</a>
+                           </p>
+                           <p>Now, you are ready to begin interactive simulation!</p>
+                      </div>
+                      <div class='ui-block-b'>                
+                           <pre id='html_skeleton' class="shiny-text-output"></pre>
+                      </div>
+                </div>
+                <!-- end ui-grid-a -->
+              </div>
+        <!-- page2 -->
+              <div id="page3" >
+                  <h1>Simulation of law:</h1>
+                      <p>One can simulate behavior of different laws 
+                         interactively with R and rCharts.
+                         Default parameters are assumed for each distribution.
+                      </br>Here is an example:
+                      </p>
+            
+                  <div class='ui-grid-a'>
+                       <div class='ui-block-a'>
+                            <strong>Distribution:</strong>
+                                    <select name="dist" >
+                                           <option value="norm">Normal</option>
+                                           <option value="unif">Uniform</option>
+                                           <option value="lnorm">Log-normal</option>
+                                           <option value="exp">Exponential</option>
+                                           <option value="cauch">Cauchy</option>
+                                    </select></br>    
+                            <strong>Number of observations:</strong>
+                            <input maxlength="6" type="number" name="n" value="10"/>
+                              
+                            </br>
+                            <strong>Summary of the distribution:</strong>
+                            
+                         <strong><pre id="summary" class="shiny-text-output">
+                                 </pre></strong>   
+                      </div>
+                  <div class='ui-block-b'> 
+                            <strong>Histogram:</strong>
+  				                 <div id="idmyplot" 
+                               class="shiny-html-output rChart highcharts" ></div>
+                 </div>
+               </div>
+               <p>Notice that this is just a customization of the default 
+                  example in your shiny package.
+                  To see that, run the following code after shiny has been loaded:
+                 <code>runExample('08_html')</code>
+               </p>
+               <p>The most interesting part is how I built this histogram:</p>
+               <p>Nothing difficult at this point. We will just need 
+                 to retrieve the data from the reactive
+                 expression that I called <code>data</code> then copy-paste 
+                 the following code into your 
+                 <code>server.R</code>
+               <p>Feel free to change <code>id</code> but keep in mind 
+                   that you will need to update the code
+                  <code>a$addParams(dom = 'your id here')</code>
+               </p></br>
+                <div class='ui-grid-a'>
+                       <div class='ui-block-a'>
+                            <p>On server side, you will write:</p>
+                               <pre>
+      output$idmyplot = renderChart ({ 
+      tmp= as.data.frame(table(round(data(),1)))  
+      colnames(tmp)=c('value','Freq') 
+      a = Highcharts$new() 
+      a$chart(type = "column") 
+      a$title(text = "Distribution") 
+      a$yAxis(title=list(text='Frequency')) 
+      a$xAxis(title=list(text='generated values') ,categories = tmp$value ) 
+      a$data(name="generated numbers", tmp$Freq )   
+      a$addParams(dom = 'idmyplot') 
+      a 
+      }) 
+                              </pre>
+                      </div>
+                      <div class='ui-block-b'>
+                          <p>In your html, you will need to declare the following 
+                             <code>div</code> tag
+                             that receive the chart:
+                          <pre id="mydiv" class="shiny-text-output"></pre>
+                          </p>
+                          <p>The most difficult part is to guess that class will be 
+                            <code>shiny-html-output rChart highcharts</code>
+                             .</br>This class is automatically generated by shiny and 
+                             I found it after looking into the source
+                             code of a shiny app that contains an rCharts graphic.
+                            
+                          </p>
+                          <p>Notice that the name of the class ends 
+                             with <code>highcharts</code> because I'm using the
+                             <code>highcharts</code> library which is available 
+                               from <code>rCharts</code>. Don't be surprise if
+                             you see a class ending by<code>polycharts</code> 
+                             or <code>morris</code> for example which are also
+                             available from rCharts.
+                          </p>
+                          
+                      </div>
+                </div>
+               
+               
+          </div>
+          <!-- page 4 --- -->
+          <div id="page4">
+            <h1>More examples with rCharts:</h1>
+            <h4>Pie chart</h4>
+            <p>Now let's use iris dataset from base package. 
+              Iris dataset has 3 different species:
+            </p>
+            <div class='ui-grid-a'>
+                       <div class='ui-block-a'>
+                           <p>Similar to the previous example but now plotting 
+                              a pie chart</p>
+                           <p>Here is the code in your <code>server.R</code></p>
+                           <pre>
+      output$'your id here' = renderChart ({
+      x=unique(as.character(iris$Species))
+      y=as.numeric(table(iris$Species))
+      a = Highcharts$new()
+      a$title(text = "Number of Species in Iris dataset")
+      a$data(type='pie',x=x,y=y  )
+      a$addParams(dom = 'your id here')
+      a
+      })
+                           </pre>
+                           <p>Don't forget your <code>div</code> tag with 
+                              <code>your id</code> and its 
+                              <code>shiny-html-output rChart highcharts</code> 
+                              class in the html part.
+                          </p>
+                       </div>
+                       <div class='ui-block-b'>
+                           <div id="piechart" 
+                                class="shiny-html-output rChart highcharts"></div>
+                       </div>
+            </div>
+            <h4>Scatter plot</h4>
+            <p>Here is a complete summary of the iris dataset available 
+               from R after executing the following command: </br>
+            <code><strong>data(iris)</strong></code> </br>
+            <code><strong>str(iris)</code></strong>
+            </p>
+            <!-- begin grid-a -->
+            <div class='ui-grid-a'>
+                        <!-- begin block a -->
+                       <div class='ui-block-a'>
+            <strong><pre id="summary_iris" class="shiny-text-output"></pre>
+              
+            </strong>
+            <p>You can select 02 variables from this dataset 
+               then generate a scatterplot using rCharts:
+            </p>
+            <p>x-axis:</p>
+            <select  name="iris_variable">
+  			           <option value="Sepal.Length" >Sepal Length</option>
+				           <option value="Petal.Length">Petal Length</option>
+                   <option value="Sepal.Width">Sepal Width</option>
+  			           <option value="Petal.Width">Petal Width</option>
+				    </select> 
+            <p>y-axis:</p>
+            <select  name="iris_variable2">
+    		           <option value="Sepal.Length" >Sepal Length</option>
+				           <option value="Petal.Length">Petal Length</option>
+                   <option value="Sepal.Width">Sepal Width</option>
+  			           <option value="Petal.Width">Petal Width</option>
+				    </select> 
+            </div>
+            <!-- end block a and beginning of block-b -->
+                       <div class='ui-block-b'>
+            <div id="plotiris" class="shiny-html-output rChart highcharts"></div>
+            </div>
+            <!-- end block b -->
+            </div>
+            <!-- end grid a -->
+             <h4>Multiple lines</h4>
+             <div class='ui-grid-a'>
+                       <div class='ui-block-a'>
+                          <p>Here is the summary of EuStockMarkets dataset
+                            which provides daily closing prices of 04 major 
+                            European stock indices:
+                          </p>
+                          <pre id="eustock" class="shiny-text-output"></pre>
+                       </div>
+                       <div class='ui-block-b'>
+                        <div id="multiline_eustock" 
+                             class="shiny-html-output rChart highcharts"></div>
+                       </div>
+            </div>
+                       
+          </div>
+          <!-- page5 --------------------- -->
+             <div  id="page5" >
+             <h1>Insert a DataTable in your customized ui:</h1>
+             <h3>table of iris dataset:</h3>
+                  
+                         <p>You will need the following code in your html:</p>
+                         <pre id="mydatatable" class="shiny-text-output"></pre>
+                         <p>On server side, you will need this code:</p>
+                         <pre id="mydatatable_serverside" class="shiny-text-output">
+                         </pre>
+                       
+                                            
+                            <!--<div id="tab_iris" 
+                                 class="shiny-html-output rChart datatables"> 
+                            </div>-->
+                            <h3>IRIS:</h3>
+                            <div id="tab_iris"  
+                                 class="shiny-datatable-output">
+                            </div>
+                                    
+                    
+                
+             </div> 
+      <!-- page6--------------------------- -->
+              <div  id="page6">
+                  <h1>Advanced Statistical Data Analysis</h1>
+                     <h2>Principal Component Analysis : </h2>
+                         <p>One can do whatever kind of statistical analysis (from the
+                            simplest to the most advanced) with R and 
+                            display it on the  web browser using <strong>shiny</strong>.
+                            With a bit of work, one can transform the following 
+                            plot to be interactive. 
+                            Dataset provides number of crimes in the U.S 
+                            that led to arrestation.
+                          </p>
+                         <p>Here is a summary of the dataset:
+                         </p>
+                         <strong>
+                          <pre id='summaryOfData' class='shiny-text-output'></pre>
+                         </strong>
+                    <p>You notice that all variables are numeric thus one can
+                      apply PCA.
+                    </p>   
+                     <h2>Let's see correlation among variables and proximity
+                       between observations:
+                     </h2>
+                     
+                     <div class='ui-grid-a'>
+                       <div class='ui-block-a'>
+                         </br></br></br>
+                         <p>First principal component is characterized 
+                            by <strong><code>Murder</code></strong>,
+                            <strong><code>Assault</code></strong> and 
+                            <strong><code>Rape</code></strong> variables 
+                            while second principal component is dominated by
+                            <strong><code>UrbanPop</strong></code> variable.
+                         </p>
+                       </div>
+                       <div class='ui-block-b'>
+                           <div id="idpca"  class='shiny-plot-output'
+                                style="min-width: 400px; height: 510px; margin: 0 auto">
+                          </div>
+                       </div>
+             
+                </div>
+              </div>
+          <div id="page7">
+            <h2>Conclusion:</h2>
+            <p>This app demonstrates the power of shiny combined with other
+               packages and web technologies. 
+               Further release should focus on activating shiny on each
+               activated page as hidding then showing a page seems 
+               to cut interactivity of rCharts.
+            </p>
+            <p>Some JavaScript issues need to be solved as well like how
+              to center the title in the middle of the page, how to add 
+              transition effect between pages.
+            </p>
+            <p>Finally, what if we work together to build a complete
+                package solution?
+            </p>
+          </div>
+      <!-- page8--------------------------- -->
+  		     <div  id="page8" >
+					<h1 align='center'>THANK YOU FOR YOUR ATTENTION!</h1>	
+          <a href="http://herimanitra.shinyapps.io/presentation">This presentation is
+            available here
+          </a>
+		     </div>
+	 <!-- footer of the page -->
+      <div data-role="footer" data-position="fixed" >
+            <div class='bloc1'>Herimanitra RANAIVOSON (air_manitra@yahoo.fr)</div>
+            <div class='bloc2'>R, shiny, jQuery mobile and rCharts</div>
+            <div class='bloc3'>June,2014</div>  
+	    </div>
+	  </div>
+    
+	 </div>
+	</body>
+</html>
