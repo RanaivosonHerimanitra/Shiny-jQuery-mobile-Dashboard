@@ -44,7 +44,7 @@ The presentation teaches you how to integrate all tools that compose a typical d
 ```
 * First line is to say that the app is written in HTML5. 
 * Critical part when building this app is the declaration of different libraries. Don't worry, you just need to copy-paste the code then put the appropriate libraries in their respective directories (css,js).
-* You have to pay attention to these directories when copying files. Notice that when a library is in shared, that means It comes with the shiny package installation then you don't need to change it.
+* You have to pay attention to these directories when copying files. Notice that when a library is in ```shared``` folder, that means It comes with the shiny package installation then you don't need to change it.
 
 First, go to jQuery mobile website then download ```jquery.mobile-1.4.2.min.css``` and ```jquery.mobile-1.4.2.min.js```
 
