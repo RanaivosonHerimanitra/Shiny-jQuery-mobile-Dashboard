@@ -15,7 +15,7 @@ It uses:
 
 The presentation teaches you how to integrate all tools that compose a typical dashboard a la Shiny. Your first task is to create an html file from an empty text file by changing its extension then load and edit it into rstudio. Skeleton of your html user interface must look like this: 
 
-```
+```html
 <!DOCTYPE html>
         <html lang="en">
               <head>
@@ -26,25 +26,20 @@ The presentation teaches you how to integrate all tools that compose a typical d
                               <link href="shared/bootstrap/css/bootstrap.min.css"/>
                               <link href="css/jquery.mobile-1.4.2.min.css"/>
                               <script src="shared/jquery.js" ></script>
-                              <script src="js/jquery.mobile-1.4.2.min.js"> 
-                              </script> 
+                              <script src="js/jquery.mobile-1.4.2.min.js"></script> 
                               <script src="shared/shiny.js"></script>
                               <script src="js/script_quest.js"></script>
-                              <script src="shared/datatables/js/jquery.dataTables.min.js">
-                              </script>
-                              <script src="shared/datatables/js/DT_bootstrap.js">
-                              </script>
+                              <script src="shared/datatables/js/jquery.dataTables.min.js"></script>
+                              <script src="shared/datatables/js/DT_bootstrap.js"></script>
                               <link href="shared/datatables/css/DT_bootstrap.css"/>
-                              <script src="shared/bootstrap/js/bootstrap.min.js">
-                              </script> 
+                              <script src="shared/bootstrap/js/bootstrap.min.js"></script> 
                               <script src="js/highcharts.js"></script>
                               <script src="js/highcharts-more.js"></script>
                               <script src="js/exporting.js"></script>
-                              <link href="shared/shiny.css" rel="stylesheet" /> 
-                              <link href="css/mycss.css" rel="stylesheet" > 
+                              <link href="shared/shiny.css" rel="stylesheet"/> 
             </head>
     <body>
-      ...
+      Your content here
     </body>
 ```
 
