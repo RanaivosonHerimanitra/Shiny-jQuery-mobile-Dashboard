@@ -1,4 +1,4 @@
-ShinyjQueryMobilePresentation
+Shiny-jQuery-mobile Dashboard
 =============================
 This is the source code of a dashboard presentation based on jQuery Mobile framework, Shiny and rCharts packages from R.
 
@@ -42,13 +42,31 @@ The presentation teaches you how to integrate all tools that compose a typical d
       Your content here
     </body>
 ```
-* First line is to say that the app is written in HTML5. 
-* Critical part when building this app is the declaration of different libraries. Don't worry, you just need to copy-paste the code then put the appropriate libraries in their respective directories (css,js).
+
+* First line says that the app is written in HTML5. 
+* Critical part when building this app is the declaration of different libraries. Don't worry, you just need to copy-paste the code then put the appropriate libraries in their respective directories (c ss,js).
 * You have to pay attention to these directories when copying files. Notice that when a library is in ```shared``` folder, that means It comes with the shiny package installation then you don't need to change it.
 
 First, go to jQuery mobile website then download ```jquery.mobile-1.4.2.min.css``` and ```jquery.mobile-1.4.2.min.js```
-
 You will also need to install the latest version of rCharts from GitHub then search for ```highcharts.js```, ```highcharts-more.js``` and ```exporting.js``` inside your package installation. 
+`
+## embedding an rCharts object from HTML:
+
+Just declare a ```div``` tag in your html:
+```html
+<div id="your id here" class="shiny-html-output rChart highcharts"></div>
+```
+On server (server.R) side, you have to write something like:
+
+```r
+output$'your id here' = renderChart ({
+#Your R code here
+# ...
+})
+```
+
+
+
 
 
 
