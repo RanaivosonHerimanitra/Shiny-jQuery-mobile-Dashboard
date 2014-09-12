@@ -56,7 +56,7 @@ Just declare a ```div``` tag with the specified ```class``` in your html:
 ```html
 <div id="your id here" class="shiny-html-output rChart highcharts"></div>
 ```
-Note that you may change the name ```highcharts``` from the name of your favorite JavaScript CHarting library available from rCharts. 
+Note that you may change ```highcharts``` by the name of your favorite JavaScript Charting library available from rCharts. 
 On server (server.R) side, you have to write something like:
 
 ```r
