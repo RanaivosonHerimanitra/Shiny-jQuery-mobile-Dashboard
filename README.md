@@ -50,7 +50,7 @@ The presentation teaches you how to integrate all tools that compose a typical d
 First, go to jQuery mobile website then download ```jquery.mobile-1.4.2.min.css``` and ```jquery.mobile-1.4.2.min.js```
 You will also need to install the latest version of rCharts from GitHub then search for ```highcharts.js```, ```highcharts-more.js``` and ```exporting.js``` inside your package installation. 
 `
-## embedding an rCharts object from HTML:
+## Embedding an rCharts object in HTML:
 
 Just declare a ```div``` tag in your html:
 ```html
@@ -60,7 +60,7 @@ On server (server.R) side, you have to write something like:
 
 ```r
 output$'your id here' = renderChart ({
-#Your R code here
+#Your R code that produce the chart here
 # ...
 })
 ```
