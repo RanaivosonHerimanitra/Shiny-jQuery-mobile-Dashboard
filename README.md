@@ -53,7 +53,7 @@ You will also need to install the latest version of rCharts from GitHub then sea
 `
 ## Embedding an rCharts object in HTML:
 
-Just declare a ```div``` tag with the specified ```class``` in your html:
+Just declare a ```div``` tag with the specified ```class``` in the ```body``` tag of your html:
 ```html
 <div id="your id here" class="shiny-html-output rChart highcharts"></div>
 ```
