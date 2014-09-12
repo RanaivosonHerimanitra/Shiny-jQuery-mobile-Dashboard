@@ -41,6 +41,7 @@ The presentation teaches you how to integrate all tools that compose a typical d
     <body>
       Your content here
     </body>
+       </html>
 ```
 
 * First line says that the app is written in HTML5. 
